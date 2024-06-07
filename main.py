@@ -38,7 +38,7 @@ def main():
     # initialize message history
     if "messages" not in st.session_state:
         st.session_state.messages = [
-            SystemMessage(content="""I want to create a Zork-like text adventure game for compliance training focused on the risk area of financial crimes within a corporation. The game should be from the perspective of office colleagues rather than a compliance officer. The objective is to teach players about the impact of financial crimes and how people may unknowingly violate regulations.
+            SystemMessage(content=""""I want to create a Zork-like text adventure game for compliance training focused on the risk area of financial crimes within a corporation. The game should be from the perspective of office colleagues rather than a compliance officer. The objective is to teach players about the impact of financial crimes and how people may unknowingly violate regulations.
 Here are the details:
 1. Setting: The game is set in a modern corporate office of a company called Crestfield Industries, known for its innovative products.
 2. Player Character: The player is Alex, a diligent office employee.
@@ -57,7 +57,8 @@ Here are the details:
 - Learn the importance of ethical decision-making and potential consequences.
 - Develop strategies for reporting and addressing suspected financial crimes.
 6. Ending: The game concludes with a summary of decisions and their impact on the company, highlighting key learnings and providing tips for real-world application.
-Using this prompt, please create a detailed Zork-like text adventure game script, including dialogue, decision points, and descriptions of scenarios.""")
+Using this prompt, please create a detailed Zork-like text adventure game script, including dialogue, decision points, and descriptions of scenarios.
+            REALLY IMPORTANT!!! Do not play out the scenario yourself. Start the game for the user to play!""")
         ]
 
     st.header("Scenario Blueprints! 🤖")
